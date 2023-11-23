@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styling.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Elias Adestam Racing</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="Adestam Projekt">
+                <img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\logotyp.png" alt="logotyp">
+            </a>
+        </div>
+    </header>
+    
+    <!-- Bild Karusell importerad library från  Swiper -->
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\KORBILD.jpg"></div>
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\SEGERGEST.jpeg"></div>
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\STCC_TEST.jpg"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="about">
+        <img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\GLADEMAN.jpg">
+        <h1>"Life’s too Short Not to Go Fast"</h1>
+        <p> Elias Adestam – 17 år men lever redan ett liv i 200 km/h. 
+            Som en av de yngsta i landet har han redan hunnit med 
+            att samla värdefull erfarenhet i fullfjädrade 
+            tävlingsbilar vars prestanda vida överstiger 
+            det mesta som rullar på våra vanliga vägar.</p>
+        
+    </div>
+
+    <div class="stats">
+        <h1>Karriären i siffror</h1>
+        <p>Race</p>
+        <div class="stats-counter" id="race">0</div>
+        <p>Podiums</p>
+        <div class="stats-counter" id="podiums">0</div>
+        <p>Wins</p>
+        <div class="stats-counter" id="wins">0</div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
+</body>
+</html>
