@@ -87,22 +87,21 @@ body {
     width: 80%;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
     /* Styling för texten "KARRIÄREN I SIFFROR" */
 .stats h1{
     text-align: center;
 }
-    /* Styling för texterna Race, Podiums och Wins */
-.stats p {
-    font-size: 3vw;
+
+.stats-item {
+    text-align: center;
+    font-size: x-large;
 }
     /* Styling för siffrorna som räknar uppåt */
 .stats-counter {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    text-align: center;
 }
 
 
