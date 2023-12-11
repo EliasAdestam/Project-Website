@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styling.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>s
     <title>Elias Adestam Racing</title>
 </head>
 <body>
+    <!-- Fixed Header top -->
     <header>
         <div class="header">
             <a id="home" href="#">
@@ -23,9 +24,9 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\KORBILD.jpg"></div>
-            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\SEGERGEST.jpeg"></div>
-            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\STCC_TEST.jpg"></div>
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\bild_karusell1.jpg"></div>
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\bild_karusell2.jpeg"></div>
+            <div class="swiper-slide"><img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\bild_karusell3.jpg"></div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
   
@@ -35,8 +36,9 @@
         </div>
     </div>
 
+    <!-- About delen med text bild och grejor -->
     <div class="about">
-        <img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\GLADEMAN.jpg">
+        <img src="C:\Users\EliasAdestam\.vscode\My Websites\Adestam Projekt\Bilder\about_bild.jpg">
         <h1>"Life’s too Short Not to Go Fast"</h1>
         <p> Elias Adestam – 17 år men lever redan ett liv i 200 km/h. 
             Som en av de yngsta i landet har han redan hunnit med 
@@ -46,6 +48,7 @@
         
     </div>
 
+    <!-- Statsgrejen som räknar upp -->
     <div class="stats">
         <h1>Karriären i siffror</h1>
         <div class="stats-item">
@@ -64,54 +67,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-    // Swiper gallery knappar skript //
-    const swiper = new Swiper('.swiper', {
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
-    // Räkna upp siffror på statisken  //
-function startCountdown(target, elementId) {
-        let count = 0;
-        const targetNumber = target;
-
-        function updateNumber() {
-            count += 1;
-            document.getElementById(elementId).innerText = count;
-
-            if (count < targetNumber) {
-                const remaining = targetNumber - count;
-                const interval = Math.max(200 / remaining, 2);
-                setTimeout(updateNumber, interval);
-            }
-        }
-
-        updateNumber();
-    }
-
-    startCountdown(170, 'race');
-    startCountdown(64, 'podiums');
-    startCountdown(23, 'wins');
-    // Go to top header //
-    document.getElementById('home').addEventListener('click', function() {
-        event.preventDefault();
-
-      window.scrollTo({
-        top: 0, // Specificerar att det ska vara hela vägen upp
-        behavior: 'smooth' // Gör skrollen upp smooth
-      });
-    });
-</script>
+<script src="javascript.js"></script>
 </body>
 </html>
